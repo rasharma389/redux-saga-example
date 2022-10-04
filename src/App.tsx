@@ -6,6 +6,8 @@ import { getTeachers } from './rtk/features/comp2Slice';
 import { COMPONENTS_FUNCTIONALITY, Status } from './interfaces/utilInterface';
 import { Box } from '@mui/material';
 import CircularProgress from '@mui/material/CircularProgress';
+// import Comp1 from '../src/components/comp1/comp1';
+import ScrollExample from '../src/components/scroll-example/scrollExample';
 
 function App() {
   const dispatch = useAppDispatch();
@@ -34,11 +36,14 @@ function App() {
 
   return (
     <div className='container'>
-      <Box className='item'>
+      {/* <Box className='item'>
         {renderStudents()}
       </Box>
       <Box className='item'>
         {renderTeachers()}
+      </Box> */}
+      <Box className='item'>
+        <ScrollExample />
       </Box>
     </div>
   );
